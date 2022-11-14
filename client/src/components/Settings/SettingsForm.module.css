@@ -1,0 +1,136 @@
+
+.infos {
+    margin: 3rem auto;
+    width: 95%;
+    max-width: 25rem;
+    border-radius: 6px;
+    background-color: #38015c;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1rem;
+}
+  
+.infos h1 {
+text-align: center;
+color: white;
+}
+  
+.control {
+margin-bottom: 0.5rem;
+}
+form{
+    margin: 0.5rem 0;
+}
+.group{
+    display: flex;
+    align-items: center;
+}
+form input{
+    font-family: inherit;
+    background-color: #f1e1fc;
+    border-radius: 0.4rem;
+    font-size:1.5rem;
+    width: 50%;
+}
+form input:hover, form input:focus{
+    outline: 1px solid #f1e1fc;
+}
+form button, .delete_button{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    background-color: #0069D9;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+form button:hover, .delete_button:hover{
+    transition: transform 50ms;
+    transform: scale(1.03);
+}
+.delete_button{
+    background-color: #C82333;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.value{
+    background-color: #f1e1fc;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-size:1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.value button{
+    background: none;
+    border: none;
+    font-size:1.5rem;
+    cursor: pointer;
+}
+.value button:hover{
+    transition: transform 50ms;
+    transform: scale(1.1);
+}
+.control label {
+display: block;
+color: white;
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+.delete_modal{
+    font-size: 1.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #38015c;
+    padding: 5rem;
+    border-radius: 1rem;
+    z-index: 1;
+}
+.modal_backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+.delete_modal input{
+    font-family: inherit;
+    background-color: #f1e1fc;
+    border-radius: 0.4rem;
+    font-size:1.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.delete_modal input:hover, .delete_modal input:focus{
+    outline: 1px solid #f1e1fc;
+}
+.delete_modal button{
+    display: block;
+    margin-left: auto;
+    font-size: 1rem;
+}
+.delete_modal button:disabled{
+    background-color: grey;
+}
+.delete_modal button:disabled:hover{
+    transform: none;
+    cursor: auto;
+}
+.danger{
+    color: #C82333;
+    margin-left: auto;
+}  
+
+@media screen and (max-width:768px) {
+    .delete_modal{
+        width: 80%;
+    }
+}

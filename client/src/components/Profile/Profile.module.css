@@ -1,0 +1,29 @@
+.show_list {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  gap: 1rem;
+}
+.show_list img {
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .show_list_container {
+    padding: 0 5rem;
+  }
+}
+
+/* width */
+.show_list::-webkit-scrollbar {
+  height: 1em;
+}
+
+/* Handle */
+.show_list::-webkit-scrollbar-thumb {
+  background-color: #4765a7;
+  border-radius: 2em;
+}

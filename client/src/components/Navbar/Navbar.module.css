@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #627fbe;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.link {
+  color: #627fbe;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.link:hover {
+  color: #1b3875;
+  text-decoration: underline;
+}
+.navbar_brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #627fbe;
+  text-decoration: none;
+}
+.navbar_brand span {
+  color: #1b3875;
+}
+.ml-auto {
+  margin-left: auto;
+}

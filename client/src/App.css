@@ -1,0 +1,120 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin: 5%;
+  max-width: 1500px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    margin-inline: auto;
+  }
+  input[type="search"] {
+    margin-left: auto;
+  }
+  .filter-list {
+    margin-inline: 6rem;
+  }
+}
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.loading svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+svg {
+  background-color: transparent !important;
+}
+input[type="search"] {
+  padding: 0.5rem;
+  border-radius: 100vw;
+  border: 2px solid #627fbe;
+}
+input[type="search"]:focus {
+  outline: none;
+  border-color: #4765a7;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pagination {
+  overflow-x: scroll;
+  padding: 1rem;
+}
+.pagination .page-link {
+  display: grid;
+  place-items: center;
+  outline: none;
+  background-color: white;
+  border: 1px solid #4765a7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 350ms;
+  cursor: pointer;
+}
+.pagination .page-link:hover,
+.pagination .page-link.active,
+.pagination .page-link:focus {
+  background-color: #4765a7;
+  text-decoration: none;
+  color: white;
+}
+.pagination::-webkit-scrollbar {
+  height: 1em;
+}
+.pagination::-webkit-scrollbar-thumb {
+  background-color: #4765a7;
+  border-radius: 2em;
+}
+
+/* Like Dislike AddList Actions */
+
+.button-group{
+  box-shadow: 0px 0px 10px -3px grey;
+  padding: 0.2rem;
+  border-radius: 1rem;
+}
+
+.show-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.show-details button{
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 150ms;
+}
+
+.show-details button:hover{
+  transform: scale(1.1);
+}
+
+.group{
+  display: flex;
+}
+
+.like-button.selected path{
+  transition: 350ms;
+  fill: green;
+}
+.dislike-button.selected path{
+  transition: 350ms;
+  fill: red;
+}
+
